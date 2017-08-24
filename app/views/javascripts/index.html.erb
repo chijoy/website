@@ -1,13 +1,17 @@
 <div class="container">
-  
-  <h1 class="text-center">Learn JavaScript the Easy Way</h1>
+
+  <div class="bg-faded p-4 my-4">
+    <hr class="divider">
+    <h2 class="text-center text-lg text-uppercase my-0"><strong>Learn JavaScript the Easy Way</strong></h2>
+    <hr class="divider">       
+  </div>
 
 
+  <div class="bg-faded p-4 my-4">
 
-  <div class="well">
-    <h4>Change text on a page:</h4>
-
-    <button type="button"
+    <h3>Here's a sample of code that will display new text after clicking a button:</h3>
+    
+    <button type="submit" class="btn btn-secondary"
     onclick="document.getElementById('newtext').innerHTML = 'New text shown here' ">
     Click Me to Display Text Below this Button</button>
 
@@ -40,44 +44,6 @@
     <ul>
       <li>Displaying an answer to a question</li>
       <li>Display additional information</li>
-    </ul>
+    </ul>        
   </div>
-
-  <div class="well">
-    <h4>Here's a quick sample of code that will display new text after clicking a button:</h4>
-
-    <button type="button"
-    onclick="document.getElementById('newtext').innerHTML = 'New text shown here' ">
-    Click Me to Display Text Below this Button</button>
-
-    <p id="newtext"></p>
-    <h4>Code:</h4>
-    <blockquote>
-      <pre>
-        <code>
-            &lt;button type="button"
-            onclick="document.getElementById('newtext').innerHTML = Here's some new text"&gt;
-            Click me to Text Below this Button&lt;/button&gt;
-        </code>
-      </pre>
-    </blockquote>
-
-    <h4>Synopsis:</h4>
-    <p>You're creating a button, that when clicked, will display the current date and time below it, in the area that has been designated with an id of "newtext"</p>
-
-    <h4>Breakdown:</h4>
-    <ul>
-      <li>button type="button" is just HTML used to create a button</li>
-      <li>onclick="" is used by JavaScript anytime you want a behavior associated with clicking a button, a link, or an image</li>
-      <li>within the double quotes after onclick= is document.getElementById('newtext').innerHTML = 'New text shown here'</li>
-      <li>the easiest way for me to think of document is as data</li>
-      <li>getElementByID is referring to the id created above, which here is "newtext"</li>
-      <li>innerHTML I think of as printing out on the screen, which here will be 'New text shown here'</li>
-    </ul>
-
-    <h4>Practical Uses:</h4>
-    <ul>
-      <li>Displaying an answer to a question</li>
-      <li>Display additional information</li>
-    </ul>
-  </div>
+</div>
