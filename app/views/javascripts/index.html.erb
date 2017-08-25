@@ -1,15 +1,19 @@
 <div class="container">
 
+  <!-- Top Introductory Box -->
+
   <div class="bg-faded p-4 my-4">
     <hr class="divider">
     <h2 class="text-center text-lg text-uppercase my-0"><strong>Learn JavaScript the Easy Way</strong></h2>
-    <hr class="divider">       
+    <hr class="divider">  
+    <p> Below are sample snippets of code that can be used in your program, with detailed descriptions of the code and common uses.</p>     
   </div>
 
+  <!-- New Text After Click of a Button -->
 
   <div class="bg-faded p-4 my-4">
 
-    <h3>Here's a sample of code that will display new text after clicking a button:</h3>
+    <h3>Display new text after clicking a button:</h3>
     
     <button type="submit" class="btn btn-secondary"
     onclick="document.getElementById('newtext').innerHTML = 'New text shown here' ">
@@ -28,11 +32,11 @@
     </blockquote>
 
     <h4>Synopsis:</h4>
-    <p>You're creating a button, that when clicked, will display the current date and time below it, in the area that has been designated with an id of "newtext"</p>
+    <p>You're creating a button that when clicked, will display new text below it, in the area that has been designated with an id of "newtext"</p>
 
     <h4>Breakdown:</h4>
     <ul>
-      <li>button type="button" is just HTML used to create a button</li>
+      <li>button type="submit" class="btn btn-secondary" is just HTML and CSS via Bootstrap used to create a button</li>
       <li>onclick="" is used by JavaScript anytime you want a behavior associated with clicking a button, a link, or an image</li>
       <li>within the double quotes after onclick= is document.getElementById('newtext').innerHTML = 'New text shown here'</li>
       <li>the easiest way for me to think of document is as data</li>
@@ -40,10 +44,117 @@
       <li>innerHTML I think of as printing out on the screen, which here will be 'New text shown here'</li>
     </ul>
 
-    <h4>Practical Uses:</h4>
+    <h4>Common Uses:</h4>
     <ul>
       <li>Displaying an answer to a question</li>
       <li>Display additional information</li>
     </ul>        
   </div>
+
+  <!-- Change existing content with the click of a button -->
+
+  <div class="bg-faded p-4 my-4">
+
+    <h3>Change text after clicking a button:</h3>
+    
+    <button type="submit" class="btn btn-secondary"
+    onclick="document.getElementById('changetext').innerHTML = 'To this new text' ">
+    Click Me to Change the Text Below this Button</button>
+
+    <p id="changetext">This text will be changed.</p>
+    <h4>Code:</h4>
+    <blockquote>
+      <pre>
+        <code>
+            &lt;button type="submit" class="btn btn-secondary"
+            onclick="document.getElementById('changetext').innerHTML = To this new text"&gt;
+            Click Me to Change the Text Below this Button&lt;/button&gt;
+        </code>
+      </pre>
+    </blockquote>
+
+    <h4>Synopsis:</h4>
+    <p>You're creating a button that when clicked, will display changed text, in the area that has been designated with an id of "changetext"</p>
+
+    <h4>Breakdown:</h4>
+    <ul>
+      <li>button type="submit" class="btn btn-secondary" is just HTML and CSS via Bootstrap used to create a button</li>
+      <li>onclick="" is used by JavaScript anytime you want a behavior associated with clicking a button, a link, or an image</li>
+      <li>within the double quotes after onclick= is document.getElementById('changetext').innerHTML = 'To this new text'</li>
+      <li>the easiest way for me to think of document is as data</li>
+      <li>getElementByID is referring to the id created above, which here is "changetext"</li>
+      <li>innerHTML I think of as printing out on the screen, which here will be 'To this new text'</li>
+    </ul>
+
+    <h4>Common Uses:</h4>
+    <ul>
+      <li>Displaying an answer to a question</li>
+      <li>Display different information</li>
+    </ul>        
+  </div>
+
+  <!-- Change Image After Clicking a Button -->
+
+  <div class="bg-faded p-4 my-4">
+
+    <h3>Change image after clicking a button:</h3>
+    
+    <button type="submit" class="btn btn-secondary"
+    onclick="document.getElementById('thumb').src = '/assets/thumbs-down-icon.png' ">
+    Click Me to Change the Image to Thumbs Down</button>
+
+    <img id="thumb" src = "/assets/thumbs-up-icon.png" style="width:100px">
+
+    <button type="submit" class="btn btn-secondary"
+    onclick="document.getElementById('thumb').src = '/assets/thumbs-up-icon.png' ">
+    Click Me to Change the Image to Thumbs Up</button>
+
+
+    <h4>Code:</h4>
+    <blockquote>
+      <pre>
+        <code>
+            &lt;button type="submit" class="btn btn-secondary"
+            onclick="document.getElementById('thumb').src='thumbs-down-icon.png' "&gt;
+            Click Me to Change the Image to Thumbs Down&lt;/button&gt;
+
+            &lt;img id="thumb" src = "/assets/thumbs-up-icon.png" style="width:100px"&gt;
+
+            &lt;button type="submit" class="btn btn-secondary"
+            onclick="document.getElementById('thumb').src='thumbs-down-icon.png' "&gt;
+            Click Me to Change the Image to Thumbs Down&lt;/button&gt;
+        </code>
+      </pre>
+    </blockquote>
+
+    <h4>Synopsis:</h4>
+    <p>You're creating a button that when clicked, will change the image, in the area that has been designated with an id of "thumb"</p>
+
+    <h4>Breakdown:</h4>
+    <ul>
+      <li>button type="submit" class="btn btn-secondary" is just HTML and CSS via Bootstrap used to create a button</li>
+      <li>onclick="" is used by JavaScript anytime you want a behavior associated with clicking a button, a link, or an image</li>
+      <li>within the double quotes after onclick= is document.getElementById('thumb').src='thumbs-down-icon.png' "</li>
+      <li>the easiest way for me to think of document is as data</li>
+      <li>getElementByID is referring to the id created above, which here is "thumb"</li>
+      <li>src is the source, or name, of the image, which here is saved in the same directory</li>
+    </ul>
+
+    <h4>Common Uses:</h4>
+    <ul>
+      <li>Changing an image based on an action</li>
+    </ul>        
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
