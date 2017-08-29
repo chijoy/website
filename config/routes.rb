@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   delete '/javascripts/:id' => 'javascripts#destroy'
 
   get '/htmls' => 'htmls#index'
+  get '/css' => 'css#index'
 end
