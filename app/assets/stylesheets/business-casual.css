@@ -21,6 +21,16 @@ h5,
 h6,
 .text-heading {
     font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.75rem;
+}
+
+li {
+    font-size: 1.50rem;
 }
 
 h1 {
@@ -47,7 +57,7 @@ h1 {
 }
 
 .text-lg {
-    font-size: 1.25rem;
+    font-size: 3.5rem;
 }
 
 .bg-faded {

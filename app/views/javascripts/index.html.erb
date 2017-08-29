@@ -4,9 +4,9 @@
 
   <div class="bg-faded p-4 my-4">
     <hr class="divider">
-    <h2 class="text-center text-lg text-uppercase my-0"><strong>Learn JavaScript the Easy Way</strong></h2>
+    <h1 class="text-center text-lg text-uppercase my-0"><strong>Learn JavaScript the Easy Way</strong></h1>
     <hr class="divider">  
-    <p> Below are sample snippets of code that can be used in your program, with detailed descriptions of the code and common uses.</p>     
+    <p> Below are sample snippets of code that can be used in your program, with detailed descriptions of the code and common uses. Feel free to search for what you need, and copy and paste the code!</p>     
   </div>
 
   <!-- New Text After Click of a Button -->
@@ -15,7 +15,7 @@
 
     <h3>Display new text after clicking a button:</h3>
     
-    <button type="submit" class="btn btn-secondary"
+    <button type="submit" class="btn btn-lg btn-primary"
     onclick="document.getElementById('newtext').innerHTML = 'New text shown here' ">
     Click Me to Display Text Below this Button</button>
 
@@ -23,11 +23,9 @@
     <h4>Code:</h4>
     <blockquote>
       <pre>
-        <code>
-            &lt;button type="button"
-            onclick="document.getElementById('newtext').innerHTML = Here's some new text"&gt;
-            Click me to Text Below this Button&lt;/button&gt;
-        </code>
+        &lt;button type="submit" class="btn btn-lg btn-primary"
+        onclick="document.getElementById('newtext').innerHTML = Here's some new text"&gt;
+        Click me to Text Below this Button&lt;/button&gt;
       </pre>
     </blockquote>
 
@@ -36,7 +34,7 @@
 
     <h4>Breakdown:</h4>
     <ul>
-      <li>button type="submit" class="btn btn-secondary" is just HTML and CSS via Bootstrap used to create a button</li>
+      <li>button type="submit" class="btn btn-lg btn-primary" is just HTML and CSS via Bootstrap used to create a button</li>
       <li>onclick="" is used by JavaScript anytime you want a behavior associated with clicking a button, a link, or an image</li>
       <li>within the double quotes after onclick= is document.getElementById('newtext').innerHTML = 'New text shown here'</li>
       <li>the easiest way for me to think of document is as data</li>
@@ -57,7 +55,7 @@
 
     <h3>Change text after clicking a button:</h3>
     
-    <button type="submit" class="btn btn-secondary"
+    <button type="submit" class="btn btn-lg btn-primary"
     onclick="document.getElementById('changetext').innerHTML = 'To this new text' ">
     Click Me to Change the Text Below this Button</button>
 
@@ -66,7 +64,7 @@
     <blockquote>
       <pre>
         <code>
-            &lt;button type="submit" class="btn btn-secondary"
+            &lt;button type="submit" class="btn btn-lg btn-primary"
             onclick="document.getElementById('changetext').innerHTML = To this new text"&gt;
             Click Me to Change the Text Below this Button&lt;/button&gt;
         </code>
@@ -78,7 +76,7 @@
 
     <h4>Breakdown:</h4>
     <ul>
-      <li>button type="submit" class="btn btn-secondary" is just HTML and CSS via Bootstrap used to create a button</li>
+      <li>button type="submit" class="btn btn-lg btn-primary" is just HTML and CSS via Bootstrap used to create a button</li>
       <li>onclick="" is used by JavaScript anytime you want a behavior associated with clicking a button, a link, or an image</li>
       <li>within the double quotes after onclick= is document.getElementById('changetext').innerHTML = 'To this new text'</li>
       <li>the easiest way for me to think of document is as data</li>
@@ -99,13 +97,13 @@
 
     <h3>Change image after clicking a button:</h3>
     
-    <button type="submit" class="btn btn-secondary"
+    <button type="submit" class="btn btn-lg btn-primary" style="margin:30px"
     onclick="document.getElementById('thumb').src = '/assets/thumbs-down-icon.png' ">
     Click Me to Change the Image to Thumbs Down</button>
 
-    <img id="thumb" src = "/assets/thumbs-up-icon.png" style="width:100px">
+    <img id="thumb" src = "/assets/thumbs-up-icon.png" style="width:40px">
 
-    <button type="submit" class="btn btn-secondary"
+    <button type="submit" class="btn btn-lg btn-primary" style="margin:30px"
     onclick="document.getElementById('thumb').src = '/assets/thumbs-up-icon.png' ">
     Click Me to Change the Image to Thumbs Up</button>
 
@@ -114,13 +112,13 @@
     <blockquote>
       <pre>
         <code>
-            &lt;button type="submit" class="btn btn-secondary"
+            &lt;button type="submit" class="btn btn-lg btn-primary"
             onclick="document.getElementById('thumb').src='thumbs-down-icon.png' "&gt;
             Click Me to Change the Image to Thumbs Down&lt;/button&gt;
 
-            &lt;img id="thumb" src = "/assets/thumbs-up-icon.png" style="width:100px"&gt;
+            &lt;img id="thumb" src = "/assets/thumbs-up-icon.png" style="width:50px"&gt;
 
-            &lt;button type="submit" class="btn btn-secondary"
+            &lt;button type="submit" class="btn btn-lg btn-primary"
             onclick="document.getElementById('thumb').src='thumbs-down-icon.png' "&gt;
             Click Me to Change the Image to Thumbs Down&lt;/button&gt;
         </code>
@@ -132,7 +130,7 @@
 
     <h4>Breakdown:</h4>
     <ul>
-      <li>button type="submit" class="btn btn-secondary" is just HTML and CSS via Bootstrap used to create a button</li>
+      <li>button type="submit" class="btn btn-lg btn-primary" is just HTML and CSS via Bootstrap used to create a button</li>
       <li>onclick="" is used by JavaScript anytime you want a behavior associated with clicking a button, a link, or an image</li>
       <li>within the double quotes after onclick= is document.getElementById('thumb').src='thumbs-down-icon.png' "</li>
       <li>the easiest way for me to think of document is as data</li>
