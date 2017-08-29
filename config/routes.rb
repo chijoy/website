@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   get '/javascripts/:id/edit' => 'javascripts#edit'
   patch '/javascripts/:id' => 'javascripts#update'
   delete '/javascripts/:id' => 'javascripts#destroy'
+
+  get '/htmls' => 'htmls#index'
 end
