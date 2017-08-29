@@ -23,9 +23,11 @@
     <h4>Code:</h4>
     <blockquote>
       <pre>
-        &lt;button type="submit" class="btn btn-lg btn-primary"
-        onclick="document.getElementById('newtext').innerHTML = Here's some new text"&gt;
-        Click me to Text Below this Button&lt;/button&gt;
+        <code>
+          &lt;button type="submit" class="btn btn-lg btn-primary"
+          onclick="document.getElementById('newtext').innerHTML = Here's some new text"&gt;
+          Click me to Text Below this Button&lt;/button&gt;
+        </code>
       </pre>
     </blockquote>
 
@@ -48,6 +50,60 @@
       <li>Display additional information</li>
     </ul>        
   </div>
+
+
+  <!-- Hide Text After Click of a Button -->
+
+  <div class="bg-faded p-4 my-4">
+
+    <h3>Hide text after clicking a button:</h3>
+    
+    <button type="submit" class="btn btn-lg btn-primary"
+    onclick="document.getElementById('hidetext').style.display='none' ">
+    Click Me to Hide the Text Below this Button</button>
+
+    <p id="hidetext">This text will be hidden</p>
+    <h4>Code:</h4>
+    <blockquote>
+      <pre>
+        <code>
+          &lt;button type="submit" class="btn btn-lg btn-primary"
+          onclick="document.getElementById('hidetext').style.display='none' "&gt;
+          Click me to Hide the Text Below this Button&lt;/button&gt;
+          &lt;p id="hidetext"&gt;This text will be hidden&lt;/p&gt;
+
+        </code>
+      </pre>
+    </blockquote>
+
+    <h4>Synopsis:</h4>
+    <p>You're creating a button that when clicked, will hide the text below it, in the area that has been designated with an id of "hidetext"</p>
+
+    <h4>Breakdown:</h4>
+    <ul>
+      <li>button type="submit" class="btn btn-lg btn-primary" is just HTML and CSS via Bootstrap used to create a button</li>
+      <li>onclick="" is used by JavaScript anytime you want a behavior associated with clicking a button, a link, or an image</li>
+      <li>within the double quotes after onclick= is document.getElementById('newtext')document.getElementById('hidetext').style.display='none'</li>
+      <li>the easiest way for me to think of document is as data</li>
+      <li>getElementByID is referring to the id created above, which here is "hidetext"</li>
+      <li>.style.display='none' means you won't be displaying what is shown in the area marked 'hidetext'</li>
+    </ul>
+
+    <h4>Common Uses:</h4>
+    <ul>
+      <li>Hiding text to provide more room on the page.</li>
+    </ul>        
+  </div>
+
+
+
+
+
+
+
+
+
+
 
   <!-- Change existing content with the click of a button -->
 
