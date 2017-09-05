@@ -21,7 +21,7 @@ h5,
 h6,
 .text-heading {
     font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -33,7 +33,7 @@ li {
     font-size: 1.50rem;
 }
 
-h1 {
+/*h1 {
     font-size: 4rem;
 }
 
@@ -55,7 +55,7 @@ h5 {
 
 h6 {
     font-size: 1.5rem;
-}
+}*/
 
 .tagline-upper {
     font-size: 5rem;
