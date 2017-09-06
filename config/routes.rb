@@ -18,4 +18,5 @@ Rails.application.routes.draw do
 
   get '/htmls' => 'htmls#index'
   get '/css' => 'css#index'
+  get '/projects' => 'projects#index'
 end
